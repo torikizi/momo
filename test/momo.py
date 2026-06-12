@@ -326,8 +326,8 @@ class Momo:
             # プロセスを起動 (エラー出力をキャプチャして問題発生時に確認できるようにする)
             self.process = subprocess.Popen(
                 cmd,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.PIPE,
+                stdout=subprocess.None,
+                stderr=subprocess.None,
                 text=True,
             )
             print(f"Started momo process with PID: {self.process.pid}")
