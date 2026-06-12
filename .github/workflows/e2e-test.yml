@@ -8,13 +8,6 @@ on:
         type: boolean
         default: false
         description: "build.yml から呼び出されたかどうか"
-  push:
-    branches:
-      - "develop"
-      - "feature/**"
-    paths:
-      - "test/**"
-      - ".github/workflows/e2e-test.yml"
   # schedule:
   #  JST 14:00-16:30 の間、30分ごとに実行
   #  UTC 05:00-07:30 (JST 14:00-16:30)
